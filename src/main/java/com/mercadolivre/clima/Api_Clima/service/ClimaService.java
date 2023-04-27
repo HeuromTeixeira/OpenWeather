@@ -3,7 +3,6 @@ import com.mercadolivre.clima.Api_Clima.model.ClimaModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 
@@ -29,6 +28,7 @@ public class ClimaService {
                         .queryParam( "lat", lat )
                         .queryParam( "lon", lon )
                         .queryParam( "appid", "a49be7069c529b5f6e843715a06fa783" )
+                        .queryParam( "units" ,"metric")
                         .build() )
                 .accept( APPLICATION_JSON )
                 .retrieve()

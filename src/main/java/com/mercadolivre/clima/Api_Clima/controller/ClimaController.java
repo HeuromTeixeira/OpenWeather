@@ -3,7 +3,6 @@ import com.mercadolivre.clima.Api_Clima.model.ClimaModel;
 import com.mercadolivre.clima.Api_Clima.service.ClimaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import javax.xml.stream.events.Characters;
